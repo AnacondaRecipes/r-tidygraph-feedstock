@@ -69,7 +69,7 @@ VERBOSE_CM:
   - VERBOSE=1
 # We use MRAN here because they take snapshots which improves reproducibility.
 cran_mirror:
-  - https://mran.microsoft.com/snapshot/2018-01-01
+  - https://mran.microsoft.com/snapshot/2022-05-09
 c_compiler_version:        # [linux or osx]
   - 7.5.0                  # [linux and not (s390x or aarch64 or ppc64le)]
   - 7.3.0                  # [linux and ppc64le]
@@ -225,7 +225,7 @@ python_implementation:
 python_impl:
   - cpython
 r_version:
-  - 3.6.0
+  - 3.6
 r_implementation:
   - 'r-base'
   - 'mro-base'  # [not osx]
@@ -241,11 +241,9 @@ sqlite:
 #    For example, we need a win-64 vs2008_win-32 package, so that we compile win-32
 #    code on win-64 miniconda.
 cross_compiler_target_platform:
-  - win-32                     # [win]
   - win-64                     # [win]
 target_platform:
   - win-64                     # [win]
-  - win-32                     # [win]
 tk:
   - 8.6                # [not ppc64le]
 vc:
